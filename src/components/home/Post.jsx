@@ -38,6 +38,10 @@ function Post({ content }) {
             <Typography variant="h4" className="py-3 text-2xl lg-max:text-xl lg-max:py-1 text-default-black">
                 {children}
             </Typography>,
+        h4: ({ children }) =>
+            <Typography variant="h5" className="py-2 text-xl lg-max:text-[12pt] lg-max:py-1 text-default-black">
+                {children}
+            </Typography>,
         p: ({ children }) =>
             <Typography variant="paragraph" className="py-2 text-xl font-normal lg-max:text-[12pt] lg-max:py-1 text-gray-600">
                 {children}
@@ -53,7 +57,7 @@ function Post({ content }) {
         a: ({ children, href }) =>
             <a href={href} className="text-blue-500 hover:underline">{children}</a>,
         blockquote: ({ children }) =>
-            <blockquote className="border-l-8 border-gray-700 pl-8 py-2 text-xl font-normal bg-blue-gray-100">
+            <blockquote className="border-l-8 border-gray-700 pl-8 py-2 bg-blue-gray-100 lg-max:pl-4">
                 {children}
             </blockquote>,
     }

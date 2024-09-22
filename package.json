@@ -1,0 +1,55 @@
+{
+    "name": "ics",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@material-tailwind/react": "^2.1.9",
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-markdown": "^9.0.1",
+        "react-router": "^6.22.3",
+        "react-router-dom": "^6.22.3",
+        "react-scripts": "5.0.1",
+        "react-syntax-highlighter": "^15.5.0",
+        "remark-gfm": "^4.0.0",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-app-rewired start",
+        "build": "react-app-rewired build",
+        "test": "react-app-rewired test",
+        "eject": "react-scripts eject",
+        "compilecss": "npx tailwindcss -i src/css/input.css -o src/css/output.css --watch"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@babel/plugin-transform-private-property-in-object": "^7.24.7",
+        "@types/customize-cra": "^1.0.8",
+        "@types/react-syntax-highlighter": "^15.5.13",
+        "customize-cra": "^1.0.0",
+        "raw-loader": "^4.0.2",
+        "react-app-rewired": "^2.2.1",
+        "tailwindcss": "^3.4.1"
+    }
+}

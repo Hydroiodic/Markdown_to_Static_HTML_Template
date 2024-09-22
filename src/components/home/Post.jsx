@@ -26,8 +26,7 @@ function Post({ content }) {
             );
         },
         h1: ({ children }) =>
-            <Typography variant="h2"
-                className="font-bold py-4 text-4xl lg-max:text-3xl lg-max:py-2 text-default-black hover:cursor-pointer">
+            <Typography variant="h2" className="font-bold py-4 text-4xl lg-max:text-3xl lg-max:py-2 text-default-black">
                 {children}
             </Typography>,
         h2: ({ children }) =>

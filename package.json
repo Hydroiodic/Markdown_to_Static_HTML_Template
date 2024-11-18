@@ -19,7 +19,7 @@
     },
     "scripts": {
         "start": "react-app-rewired start",
-        "build": "npx tailwindcss -i src/css/input.css -o src/css/output.css && react-app-rewired build",
+        "build": "npx tailwindcss -i src/css/input.css -o src/css/output.css && react-app-rewired build && python3 post_process.py build/index.html && python3 post_process.py build/asset-manifest.json",
         "test": "react-app-rewired test",
         "eject": "react-scripts eject",
         "compilecss": "npx tailwindcss -i src/css/input.css -o src/css/output.css --watch"
